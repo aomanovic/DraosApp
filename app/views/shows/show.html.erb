@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Event:</strong>
+  <%= @show.event_id %>
+</p>
+
+<p>
+  <strong>Venue:</strong>
+  <%= @show.venue_id %>
+</p>
+
+<p>
+  <strong>Showtime:</strong>
+  <%= @show.showtime %>
+</p>
+
+<p>
+  <strong>Layout:</strong>
+  <%= @show.layout_id %>
+</p>
+
+<%= link_to 'Edit', edit_show_path(@show) %> |
+<%= link_to 'Back', shows_path %>

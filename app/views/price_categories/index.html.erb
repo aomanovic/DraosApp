@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Price Categories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Event</th>
+      <th>Venue</th>
+      <th>Section</th>
+      <th>Category</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @price_categories.each do |price_category| %>
+      <tr>
+        <td><%= price_category.event_id %></td>
+        <td><%= price_category.venue_id %></td>
+        <td><%= price_category.section_id %></td>
+        <td><%= price_category.category_id %></td>
+        <td><%= price_category.price %></td>
+        <td><%= link_to 'Show', price_category %></td>
+        <td><%= link_to 'Edit', edit_price_category_path(price_category) %></td>
+        <td><%= link_to 'Destroy', price_category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Price category', new_price_category_path %>

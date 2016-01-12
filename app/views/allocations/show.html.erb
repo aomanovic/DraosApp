@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Assigned:</strong>
+  <%= @allocation.assigned %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @allocation.user_id %>
+</p>
+
+<p>
+  <strong>Show:</strong>
+  <%= @allocation.show_id %>
+</p>
+
+<p>
+  <strong>Row:</strong>
+  <%= @allocation.row_id %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @allocation.quantity %>
+</p>
+
+<p>
+  <strong>Start seat:</strong>
+  <%= @allocation.start_seat %>
+</p>
+
+<p>
+  <strong>End seat:</strong>
+  <%= @allocation.end_seat %>
+</p>
+
+<%= link_to 'Edit', edit_allocation_path(@allocation) %> |
+<%= link_to 'Back', allocations_path %>

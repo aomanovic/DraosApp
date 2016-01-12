@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Event:</strong>
+  <%= @price_category.event_id %>
+</p>
+
+<p>
+  <strong>Venue:</strong>
+  <%= @price_category.venue_id %>
+</p>
+
+<p>
+  <strong>Section:</strong>
+  <%= @price_category.section_id %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @price_category.category_id %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @price_category.price %>
+</p>
+
+<%= link_to 'Edit', edit_price_category_path(@price_category) %> |
+<%= link_to 'Back', price_categories_path %>

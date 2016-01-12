@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Venue:</strong>
+  <%= @venue_layout.venue_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @venue_layout.name %>
+</p>
+
+<p>
+  <strong>Capacity:</strong>
+  <%= @venue_layout.capacity %>
+</p>
+
+<%= link_to 'Edit', edit_venue_layout_path(@venue_layout) %> |
+<%= link_to 'Back', venue_layouts_path %>

@@ -1,0 +1,45 @@
+<%= form_for(@allocation) do |f| %>
+  <% if @allocation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@allocation.errors.count, "error") %> prohibited this allocation from being saved:</h2>
+
+      <ul>
+      <% @allocation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :assigned %><br>
+    <%= f.text_field :assigned %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :show_id %><br>
+    <%= f.number_field :show_id %>
+  </div>
+  <div class="field">
+    <%= f.label :row_id %><br>
+    <%= f.number_field :row_id %>
+  </div>
+  <div class="field">
+    <%= f.label :quantity %><br>
+    <%= f.number_field :quantity %>
+  </div>
+  <div class="field">
+    <%= f.label :start_seat %><br>
+    <%= f.number_field :start_seat %>
+  </div>
+  <div class="field">
+    <%= f.label :end_seat %><br>
+    <%= f.number_field :end_seat %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
