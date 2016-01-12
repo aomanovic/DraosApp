@@ -36,7 +36,7 @@ test:
 production:
   adapter: postgresql
   encoding: utf-8
-  database: draos-app
+  database: ticket-monster
   pool: 50
   username: root
   password: root
